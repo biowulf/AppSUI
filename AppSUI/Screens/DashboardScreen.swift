@@ -13,10 +13,9 @@ struct DashboardScreen: View {
     
     var body: some View {
         Button(action: {
-            viewModel.catalogViewModel.catalog[4].isActive = true
-            viewModel.selectionTab = 1
+            viewModel.opencreen()
         }, label: {
-            Text("Show Mac Pro Gen 3")
+            Text(viewModel.openScreenTitleButton)
         })
     }
     
