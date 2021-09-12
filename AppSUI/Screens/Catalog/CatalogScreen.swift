@@ -15,7 +15,7 @@ struct CatalogScreen: View {
             List(viewModel.catalog) { cellModel in
                 NavigationLink(
                     destination: CatalogDetailScreen(model: cellModel),
-                    isActive: $viewModel.isShow[viewModel.catalog.firstIndex(where: {$0.id == cellModel.id})!],
+                    isActive: $viewModel.catalog[viewModel.catalog.firstIndex(where: {$0.id == cellModel.id})!].isActive,
                     label: {
                         CatalogCellView(model: cellModel)
                     })

@@ -12,4 +12,5 @@ struct CatalogModel: Identifiable, Hashable {
     var iconName: String
     var title: String
     var subTitle: String
+    var isActive = false
 }

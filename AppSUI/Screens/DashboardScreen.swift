@@ -13,7 +13,7 @@ struct DashboardScreen: View {
     
     var body: some View {
         Button(action: {
-            viewModel.catalogViewModel.isShow[4] = true
+            viewModel.catalogViewModel.catalog[4].isActive = true
             viewModel.selectionTab = 1
         }, label: {
             Text("Show Mac Pro Gen 3")

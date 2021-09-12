@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import DeviceKit
 
 final class CatalogScreenViewModel: ObservableObject {
     @Published var catalog: [CatalogModel] = [
@@ -21,6 +20,4 @@ final class CatalogScreenViewModel: ObservableObject {
         CatalogModel(iconName: "ipad.homebutton", title: "iPad", subTitle: "with Button"),
         CatalogModel(iconName: "ipad", title: "iPad", subTitle: ""),
         ]
-    
-    @Published var isShow: [Bool] = [false, false, false, false, false, false, false, false, false, false]
 }
